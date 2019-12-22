@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="56dp"
+            android:paddingRight="24dp">
+
+        <ImageView
+                android:id="@+id/login_image"
+                android:layout_width="wrap_content"
+                android:layout_height="144dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                app:srcCompat="@drawable/login_img" />
+        <TextView
+                android:id="@+id/loginError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+        <!-- Email Label -->
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/colorPrimary">
+
+            <EditText
+                    android:id="@+id/loginMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Label -->
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/colorPrimary">
+
+            <EditText
+                    android:id="@+id/loginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+                android:id="@+id/withoutAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Don't have account? Chick here."
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical" >
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorPrimary"
+            android:padding="12dp"
+            android:text="Login"
+            android:textColor="@color/blue_2" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+            android:id="@+id/registrationLinearView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            tools:context=".RegistrationActivity">
+
+        <TextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/registrationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/blue_2"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/registrate_user_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/choose_image"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+            <ImageView
+                    android:id="@+id/deleteImageIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/registrate_user_image"
+                    android:src="@drawable/ic_clear_black_24dp"
+                    android:visibility="invisible"
+                    android:tint="@color/colorPrimaryDark"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+                android:id="@+id/registerError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="10dp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        <EditText
+                android:id="@+id/registrateName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Name" />
+
+        <EditText
+                android:id="@+id/registrateSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Surname" />
+
+        <EditText
+                android:id="@+id/registrateMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mail" />
+        <EditText
+                android:id="@+id/registratePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password" />
+        <EditText
+                android:id="@+id/registratePassConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password confirmation" />
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/doRegistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_send"
+                android:layout_gravity="bottom|end"
+                android:tint="@color/white"
+                app:backgroundTint="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+</ScrollView>

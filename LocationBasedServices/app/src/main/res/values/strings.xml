@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Location-based Services</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_place_detail">PlaceDetailActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_add_place">AddPlaceActivity</string>
+    <string name="save">Save</string>
+    <string name="birthdayHint">Birthday date</string>
+</resources>

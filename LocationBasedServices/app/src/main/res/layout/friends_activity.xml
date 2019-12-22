@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+            android:id="@+id/settingsArea"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        <Button
+                android:id="@+id/searchFriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Search"
+                android:drawableLeft="@drawable/ic_search_black_24dp">
+        </Button>
+        <Button
+                android:id="@+id/addFriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add user"
+                android:drawableRight="@drawable/icon_add_user">
+        </Button>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/friends_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/settingsArea"
+            android:layout_marginBottom="8dp"/>
+</RelativeLayout>
